@@ -9,7 +9,7 @@ if(!BASE_URL) throw new Error('COINGECKO_BASE_URL is not defined');
 if(!API_KEY)  throw new Error('COINGECKO_API_KEY is not defined');
 
 export async function fetcher<T>(endpoint:string,
-  params:QueryParams,
+  params?:QueryParams,
   revalidate=600
 ):Promise<T>{
   const url = qs.stringifyUrl({
