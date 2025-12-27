@@ -45,14 +45,12 @@ async function TrendingCoins() {
   return (
     <div id='trending-coins'>
       <h4>Trending Coins</h4>
-      <div id="trending-coins">
       <DataTable data={trendingCoins.coins?.slice(0,6) ||[]} 
         rowKey={(coin) => coin.item.id}
        columns={columns} headerCellClassName='py-3!'
        bodyCellClassName='py-2!'
        tableClassName='trending-coins-table'
        />
-       </div>
     </div>
   )
 }
