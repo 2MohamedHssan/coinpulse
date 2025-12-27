@@ -1,5 +1,5 @@
 import { fetcher } from '@/lib/coingecko.actions';
-import { cn, formateCurrency } from '@/lib/utils';
+import { cn, formatCurrency } from '@/lib/utils';
 import { TrendingDown, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -38,7 +38,7 @@ async function TrendingCoins() {
         )
       }
     },
-    {header:'Price',cellClassName:'price-cell' ,cell:(coin)=>formateCurrency(coin.item.data?.price)},
+    {header:'Price',cellClassName:'price-cell' ,cell:(coin)=>formatCurrency(coin.item.data?.price)},
   ]
     const trendingCoins = await fetcher<{coins:TrendingCoin[]}>('/search/trending',{},300);
   

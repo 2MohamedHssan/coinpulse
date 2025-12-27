@@ -1,7 +1,7 @@
 import CoinOverView from "@/components/home/CoinOverView";
-import CoinOverViewFallback from "@/components/home/CoinOverView.fallback";
+import CoinOverViewFallback from "@/components/ui/CoinOverView.fallback";
 import TrendingCoins from "@/components/home/TrendingCoins";
-import TrendingCoinsFallback from "@/components/home/TrendingCoins.fallback";
+import TrendingCoinsFallback from "@/components/ui/TrendingCoins.fallback";
 import { Suspense } from "react";
 
 export default async function Home() {
