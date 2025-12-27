@@ -22,10 +22,10 @@ export async function fetcher<T>(endpoint:string,
   },
 );
   const response =await fetch(url,{
-    headers:{
-      // 'x-cg-pro-api-ke':API_KEY,
-      'Content-Type':'application/json',
-    } as Record<string,string>,
+    headers: {
+      'x-cg-demo-api-key': API_KEY,
+      'Content-Type': 'application/json',
+    } as Record<string, string>,
     next:{revalidate},
   }) 
 
